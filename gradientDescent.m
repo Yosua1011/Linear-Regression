@@ -20,7 +20,7 @@ for iter = 1:num_iters
     h = X * theta;
     B = [0 ; 0];
     for i = 1 : m,
-        B = B + (h(i)-y(i))*X(i,:)'; 
+        B = B + (h(i)-y(i))*X(i,:)';
     end
     
     theta = theta - (alpha * B) / m;

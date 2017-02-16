@@ -119,7 +119,7 @@ pause;
 fprintf('Plotting Training and regressioned results by gradient descent.\n');
 X = [ones(m, 1) data(:, 1:2)]; %denormalize features
 figure;
-plot3(X(:,2),X(:,3),y,'o');
+plot3(X(:,2),X(:,3),y,'x');
 xlabel('sq-ft of room');
 ylabel('#bedroom');
 zlabel('price');
@@ -188,7 +188,7 @@ pause;
 % Plotting Training and regressioned data.
 fprintf('Plotting Training and regressioned results by solving normal equation.\n');
 figure;
-plot3(X(:,2),X(:,3),y,'o');
+plot3(X(:,2),X(:,3),y,'x');
 xlabel('sq-ft of room');
 ylabel('#bedroom');
 zlabel('price');
